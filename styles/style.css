@@ -6,6 +6,10 @@ a:hover {
     text-decoration: none;
 }
 
+.content {
+    margin-bottom: 200px;
+}
+
 
 /*login page*/
 
@@ -75,6 +79,7 @@ a:hover {
 
 .left-panel {
     margin-top: 25px;
+    position: fixed;
 }
 
 .left-panel ul {
@@ -86,13 +91,14 @@ a:hover {
 }
 
 .left-panel a {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     color: rgba(25, 25, 25, 0.68);
 }
 
 .left-panel i {
     margin-right: 10px;
+    width: 20px;
 }
 
 .top-panel {
@@ -153,4 +159,111 @@ a:hover {
 .slick-slide img {
     display: block;
     margin: 0 auto;
+}
+
+.player {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 5px;
+    background-color: #ffffff;
+    color: rgba(25, 25, 25, 0.68);
+}
+
+.player .fa {
+    cursor: pointer;
+}
+
+.player-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.player-rigth {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.player h3 {
+    text-align: left;
+}
+
+.player .fa-fast-backward, .player .fa-fast-forward {
+    position: relative;
+    top: -8px;
+    font-size: 40px;
+}
+
+.player .fa-play-circle{
+    font-size: 70px;
+    margin: 0 20px;
+}
+
+.player-rigth .fa {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.player-rigth .dropdown-toggle::after {
+    display: none;
+}
+
+
+/*list*/
+
+.list-info {
+    display: flex;
+}
+
+.list-info .info {
+    align-self: flex-end;
+}
+
+.track-container {
+    margin-top: 50px;
+    color: rgba(25, 25, 25, 0.68);
+}
+
+.track-container ul {
+    margin: 0;
+    padding: 0;
+}
+
+.track-container  ul li {
+    border-top: 1px solid  rgba(25, 25, 25, 0.4);
+    padding: 10px 0;
+}
+
+.track-container  ul li h3 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.list-item {
+    display: flex;
+}
+
+.list-item .fa-play-circle {
+    font-size: 35px;
+    margin: 0 10px;
+}
+
+/*albums*/
+
+.albums-title {
+    margin-top: 38px;
+}
+
+.albums img {
+    display: block;
+}
+
+.albums p {
+    text-align: left;
 }
